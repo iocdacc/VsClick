@@ -1,2 +1,32 @@
-# old-js
-传统的JS环境 此环境编译的应用 一般使用传统的服务端渲染方式 有别于现在的SPA和SSR 一般前端会通过jQuery直接操作DOM
+## 目录结构
+  dist 编译目录
+  src 代码目录
+
+## devDependencies
+  "@babel/core": "^7.4.5",
+  "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+  "@babel/preset-env": "^7.4.5",
+  "autoprefixer": "^9.7.4",
+  "babel-loader": "^8.0.6",
+  "clean-webpack-plugin": "^3.0.0",
+  "css-loader": "^2.1.1",
+  "eslint": "^6.8.0",
+  "eslint-config-airbnb-base": "^14.0.0",
+  "eslint-plugin-import": "^2.20.0",
+  "handlebars": "^4.7.2",
+  "handlebars-loader": "^1.7.1",
+  "html-webpack-plugin": "^3.2.0",
+  "html-webpack-tags-plugin": "^2.0.17",
+  "mini-css-extract-plugin": "^0.9.0",
+  "node-sass": "^4.13.1",
+  "optimize-css-assets-webpack-plugin": "^5.0.3",
+  "postcss-loader": "^3.0.0",
+  "sass-loader": "^8.0.2",
+  "terser-webpack-plugin": "^2.3.2",
+  "url-loader": "^1.1.2",
+
+  ### webpack核心和工具
+  "webpack": "^4.32.2",
+  "webpack-cli": "^3.3.2",
+  "webpack-dev-server": "^3.3.1",
+  "webpack-merge": "^4.2.2"

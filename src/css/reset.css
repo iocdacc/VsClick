@@ -1,0 +1,23 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0;}
+html{font-size:12px;font-family: "Meslo LG","Helvetica Neue",Helvetica,"Microsoft yahei",Arial,sans-serif,monospace;}
+body{font-size:100%;color:#c9cacc;}
+a{text-decoration:none;color:#c9cacc;}
+a:link{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:active{text-decoration:none;}
+li{list-style:none;font-size:1rem;}
+em{font-style:normal}
+ul{font-size:0px;}
+img{border:0;vertical-align:middle}
+img{max-width:100%;max-height:100%;}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+::selection{background:#c1e4ff;}/*文本选中时的颜色*/
+*:focus{outline:none;}/*焦点颜色*/
+.clear:after{content:"";display:table;}
+.clear:after{clear:both;}
+.right{float:right;}
+.left{float:left;}
+.icon{width:1em;height:1em;overflow:hidden;}
+.bold{font-weight: bold;}

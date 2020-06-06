@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-      'airbnb-base',
+
   ],
   env: {
       // Your environments (which contains several predefined global variables)

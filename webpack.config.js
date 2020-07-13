@@ -7,12 +7,12 @@ const merge = require('webpack-merge');
 const template = require('./webpack.config.template.js');
 
 module.exports = merge(template, {
-  mode: 'production',
+  mode: 'development',
   entry: {
-    index: './src/js/index.js',
+    'main.min': './src/index.js',
   },
   output: {
-    filename: 'js/[name].[hash].js',
+    filename: 'js/[name].js',
     path: path.resolve(__dirname, 'dist'),
     // library: 'index',
     // libraryTarget: 'umd'
@@ -29,7 +29,7 @@ module.exports = merge(template, {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].[hash].css',
+      filename: 'css/[name].css',
     }),
   ],
   module: {

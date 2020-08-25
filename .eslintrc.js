@@ -18,5 +18,6 @@ module.exports = {
   },
   rules: {
     // Customize your rules
+    "capIsConstructor": "0",
   }
 };

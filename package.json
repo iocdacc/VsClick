@@ -1,8 +1,8 @@
 {
-  "name": "old-js",
+  "name": "vsclick",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:iocdacc/old-js.git",
+  "repository": "",
   "author": "iocdacc <iocdacc@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -10,8 +10,11 @@
     "start": "webpack-dev-server --open",
     "build": "webpack"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
   "devDependencies": {
+    "style-loader": "^1.2.1",
     "@babel/core": "^7.4.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.4.5",
@@ -19,6 +22,7 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.3",
     "css-loader": "^2.1.1",
     "eslint": "^7.4.0",
     "eslint-config-alloy": "^3.7.3",

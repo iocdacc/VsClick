@@ -1,7 +1,7 @@
 body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0;}
 html{font-size:12px;font-family: "Meslo LG","Helvetica Neue",Helvetica,"Microsoft yahei",Arial,sans-serif,monospace;}
-body{font-size:100%;color:#c9cacc;}
-a{text-decoration:none;color:#c9cacc;}
+body{font-size:100%;color:#6f6f6f;}
+a{text-decoration:none;color:#6f6f6f;}
 a:link{text-decoration:none;}
 a:visited{text-decoration:none;}
 a:hover{text-decoration:none;}

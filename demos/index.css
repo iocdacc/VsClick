@@ -1,0 +1,27 @@
+body{background-color:bisque;}
+
+.g-nav{width:500px;margin:0 auto;}
+.g-top{margin:10px 0 0 0;}
+.g-top-2{margin:50px 0 0 0;}
+.g-list{margin: 15px 20px 0 0;}
+.g-foot{margin-bottom: 50px;}
+.g-r{float: right;}
+.g-l{float: left;}
+
+.m-menu{text-align:center;color: #2bbc8a;}
+.m-menu a{color: #2bbc8a;}
+.m-menu a:hover{border-bottom:1px solid #2bbc8a;}
+.m-menu span{margin:0 8px;}
+
+.m-title h1{text-align:center;font-size: 36px;}
+
+.m-explain{text-align:center;font-size: 16px;}
+.m-explain p{margin: 16px 0;}
+
+.m-content {margin-right: -20px;}
+.m-content h2{font-size: 18px;}
+.m-content p{font-size: 16px;margin: 10px 0 0 0;}
+
+
+.m-show {height: 200px;width: 240px;background-color: #f0f0f0;position: relative;}
+.m-code {width: 216px;height: 120px;}

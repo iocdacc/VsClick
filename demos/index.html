@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VsClick</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/themes/prism.css">
+</head>
+
+<body>
+  <div class="g-nav">
+    <div class="m-menu g-top">
+      <a href="https://blog.iocdacc.com" target="_blank">Blog</a>
+      <span>|</span>
+      <a href="https://github.com/iocdacc" target="_blank">Github</a>
+    </div>
+    <div class="m-title g-top-2">
+      <h1>VsClick</h1>
+    </div>
+    <div class="m-explain g-top-2">
+      <p>鼠标点击效果</p>
+      <p>click effect</p>
+    </div>
+
+
+    <div class="m-content g-top-2 clear">
+      <h2>{effect: 'drop'}</h2>
+      <ul>
+        <li class="g-list g-l">
+          <div class="m-show drop"></div>
+          <pre class="m-code"><code class="language-javascript">let vsClick = new VsClick({
+  dom: 'drop',
+  timer: 3000,
+  emoji: ['🍋', '🍌', '🍉', '🍎', '🍒', '🍓', '🌽'],
+})</code></pre>
+        </li>
+        <li class="g-list g-l">
+          <div class="m-show drop2"></div>
+          <pre class="m-code"><code class="language-javascript">let vsClick = new VsClick({
+  dom: 'drop2',
+  timer: 3000,
+  emoji: ['🍋', '🍌', '🍉', '🍎', '🍒', '🍓', '🌽'],
+  spring: true
+})</code></pre>
+        </li>
+        <li class="g-list g-l">
+          <div class="m-show drop3"></div>
+          <pre class="m-code"><code class="language-javascript">let vsClick = new VsClick({
+  dom: 'drop3',
+  timer: 3000,
+  emoji: ['🍋', '🍌', '🍉', '🍎', '🍒', '🍓', '🌽'],
+  slide: true
+})</code></pre>
+        </li>
+        <li class="g-list g-l">
+          <div class="m-show drop4"></div>
+          <pre class="m-code"><code class="language-javascript">let vsClick = new VsClick({
+  dom: 'drop4',
+  timer: 3000,
+  spring: true,
+  height: 5,
+  width: 5
+})</code></pre>
+        </li>
+      </ul>
+    </div>
+
+    <div class="m-content g-top-2 clear">
+      <h2>{effect: 'spread'}</h2>
+      <ul>
+        <li class="g-list g-l">
+          <div class="m-show spread"></div>
+          <pre class="m-code"><code class="language-javascript">let vsClick = new VsClick({
+  effect: 'spread',
+  dom: 'spread',
+  timer: 700,
+  emoji: ['🍋', '🍌', '🍉', '🍎', '🍒', '🍓', '🌽'],
+})</code></pre>
+        </li>
+        <li class="g-list g-l">
+          <div class="m-show spread2"></div>
+          <pre class="m-code"><code class="language-javascript">let vsClick = new VsClick({
+  effect: 'spread',
+  dom: 'spread2',
+  timer: 700,
+  emoji: ['🍋', '🍌', '🍉', '🍎', '🍒', '🍓', '🌽'],
+  lucency: true
+})</code></pre>
+        </li>
+        <li class="g-list g-l">
+          <div class="m-show spread3"></div>
+          <pre class="m-code"><code class="language-javascript">let vsClick = new VsClick({
+  effect: 'spread',
+  dom: 'spread3',
+  timer: 700,
+  emoji: ['🍋', '🍌', '🍉', '🍎', '🍒', '🍓', '🌽'],
+  minish: true
+})</code></pre>
+        </li>
+        <li class="g-list g-l">
+          <div class="m-show spread4"></div>
+          <pre class="m-code"><code class="language-javascript">let vsClick = new VsClick({
+  effect: 'spread',
+  dom: 'spread4',
+  timer: 700,
+  height: 5,
+  width: 5
+})</code></pre>
+        </li>
+      </ul>
+    </div>
+
+    <div class="m-content g-top-2 clear">
+      <h2>{effect: 'sudoku'}</h2>
+      <ul>
+        <li class="g-list g-l">
+          <div class="m-show sudoku"></div>
+          <pre class="m-code"><code class="language-javascript">let vsClick = new VsClick({
+  effect: 'sudoku',
+  dom: 'sudoku',
+  timer: 700,
+  height: 5,
+  width: 5
+})</code></pre>
+        </li>
+      </ul>
+    </div>
+
+    <div class="m-content g-top-2 clear">
+      <h2>简介</h2>
+      <p>1. 需要环境支持requestAnimationFrame</p>
+      <p>2. 测试环境 Chrome 版本 84.0.4147.135（正式版本） （64 位）</p>
+    </div>
+
+    <div class="m-content g-top-2 g-foot clear">
+      <h2>默认配置</h2>
+      <pre><code class="language-javascript">let vsClick = new VsClick({
+  effect: 'drop|spread|sudoku', // 点击效果。
+  dom: window,  // 生效的dom，默认为整个窗口。
+  color: ['#ffbe0b','#fb5607','#ff006e','#8338ec','#3a86ff'], // 颜色集合。
+  emoji: [], // emoji集合。['🍋','🍌','🍉','🍎','🍒','🍓','🌽']
+  height: 20, // 粒子的高度
+  width: 20, // 粒子的宽度(也控制emoji的字体大小)
+  timer: 2000, // 动画持续时间
+  spring: false, // 是否弹跳
+  slide: false, // 是否滑动
+  lucency: false // 是否逐渐透明
+})</code></pre>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.21.0/prism.min.js"></script>
+  <script src="../dist/vsclick.min.js"></script>
+  <script>
+    let drop = new VsClick({
+      dom: 'drop',
+      timer: 3000,
+      emoji: ['🍋', '🍌', '🍉', '🍎', '🍒', '🍓', '🌽'],
+    })
+
+    let drop2 = new VsClick({
+      dom: 'drop2',
+      timer: 3000,
+      emoji: ['🍋', '🍌', '🍉', '🍎', '🍒', '🍓', '🌽'],
+      spring: true
+    })
+
+    let drop3 = new VsClick({
+      dom: 'drop3',
+      timer: 3000,
+      emoji: ['🍋', '🍌', '🍉', '🍎', '🍒', '🍓', '🌽'],
+      slide: true
+    })
+
+    let drop4 = new VsClick({
+      dom: 'drop4',
+      timer: 3000,
+      spring: true,
+      height: 5,
+      width: 5
+    })
+
+    let spread = new VsClick({
+      effect: 'spread',
+      dom: 'spread',
+      timer: 700,
+      emoji: ['🍋', '🍌', '🍉', '🍎', '🍒', '🍓', '🌽'],
+    })
+
+    let spread2 = new VsClick({
+      effect: 'spread',
+      dom: 'spread2',
+      timer: 700,
+      emoji: ['🍋', '🍌', '🍉', '🍎', '🍒', '🍓', '🌽'],
+      lucency: true
+    })
+
+    let spread3 = new VsClick({
+      effect: 'spread',
+      dom: 'spread3',
+      timer: 700,
+      emoji: ['🍋', '🍌', '🍉', '🍎', '🍒', '🍓', '🌽'],
+      minish: true
+    })
+
+    let spread4 = new VsClick({
+      effect: 'spread',
+      dom: 'spread4',
+      timer: 700,
+      height: 5,
+      width: 5
+    })
+
+    let sudoku = new VsClick({
+      effect: 'sudoku',
+      dom: 'sudoku',
+      timer: 700,
+      height: 5,
+      width: 5
+    })
+  </script>
+</body>
+
+</html>

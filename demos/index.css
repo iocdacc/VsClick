@@ -23,5 +23,5 @@ body{background-color:bisque;}
 .m-content p{font-size: 16px;margin: 10px 0 0 0;}
 
 
-.m-show {height: 200px;width: 240px;background-color: #f0f0f0;position: relative;}
+.m-show {height: 200px;width: 240px;background: url('./click.png') no-repeat scroll;background-color: #f0f0f0;position: relative;}
 .m-code {width: 216px;height: 120px;}
